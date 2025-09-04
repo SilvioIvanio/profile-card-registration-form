@@ -50,9 +50,9 @@ button:hover {
     background-color: #4cae4c;
 }
 
-@media (max-width: 760px_) {
+@media (max-width: 760px) {
     form {
+        width: 90%;
         padding: 15px;
-        margin: 10px;
     }
 }
