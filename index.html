@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+       <h1>Profile Card Registration</h1>
+
+       <p>
+            <label for="name">Full Name:</label>
+            <br>
+            <input type="text" id="name" name="name" required>
+       </p>
+       
+       <p>
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" id="email" name="email" required>
+       </p>
+
+       <p>
+            <label for="program">Program:</label>
+            <br>
+            <select id="program" name="program" required>
+                <option value="">Select a program</option>
+                <option value="computing">Computing and Informatics</option>
+                <option value="engineering">Engineering and the Built Environment</option>
+                <option value="health">Health, Natural Resources and Applied Sciences</option>
+                <option value="commerce">Commerce, Human Sciences and Education</option>
+            </select>
+       </p>
+
+       <p>
+            <label for="year">Year:</label>
+            <br>
+            <select name="year" id="year" required>
+                <option value="">Select a year</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+       </p>
+
+       <p>
+            <label for="interests">Interests:</label>
+            <br>
+            <textarea id="interests" name="interests" rows="4" cols="50" placeholder="Describe your interests here..."></textarea>
+       </p>
+
+       <p>
+            <label for="photo">Photo URL:</label>
+            <br>
+            <input type="url" id="photo" name="photo" placeholder="Enter photo URL" required>
+       </p>
+
+       <p>
+            <button type="submit">Submit</button>
+       </p>
+    </form>
+
+</body>
+</html>
