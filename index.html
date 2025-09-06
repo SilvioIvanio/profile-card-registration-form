@@ -3,37 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
+    <title>Profile Card</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
+    <!-- Form for users to register their profile -->
     <form action="">
-       <h1>Profile Card Registration</h1>
+       <h1 id="main-heading">Profile Card Registration</h1>
 
+       <!-- Input for the user's full name -->
        <p>
             <label for="name">Full Name:</label>
             <br>
             <input type="text" id="name" name="name" required>
+            <!-- Error if the name is missing -->
+            <span class="error-message" id="name-error"></span>
        </p>
        
+       <!-- Input for the user's email -->
        <p>
             <label for="email">Email:</label>
             <br>
             <input type="email" id="email" name="email" required>
+            <!-- Error for the email -->
+            <span class="error-message" id="email-error"></span>
        </p>
 
+       <!-- Program Selector -->
        <p>
             <label for="program">Program:</label>
             <br>
             <select id="program" name="program" required>
                 <option value="">Select a program</option>
-                <option value="computing">Computing and Informatics</option>
-                <option value="engineering">Engineering and the Built Environment</option>
-                <option value="health">Health, Natural Resources and Applied Sciences</option>
-                <option value="commerce">Commerce, Human Sciences and Education</option>
+                <option value="Computing and Informatics">Computing and Informatics</option>
+                <option value="Engineering and the Built Environment">Engineering and the Built Environment</option>
+                <option value="Health, Natural Resources and Applied Sciences">Health, Natural Resources and Applied Sciences</option>
+                <option value="Commerce, Human Sciences and Education">Commerce, Human Sciences and Education</option>
             </select>
+            <!-- Error for the program selection -->
+            <span class="error-message" id="program-error"></span>
        </p>
 
+       <!-- Year of study selector -->
        <p>
             <label for="year">Year:</label>
             <br>
@@ -44,24 +56,51 @@
                 <option value="3">3</option>
                 <option value="4">4</option>
             </select>
+            <!-- Error for the year selection -->
+            <span class="error-message" id="year-error"></span>
        </p>
 
+       <!-- Text area for user's interests -->
        <p>
             <label for="interests">Interests:</label>
             <br>
             <textarea id="interests" name="interests" rows="4" cols="50" placeholder="Describe your interests here..."></textarea>
        </p>
 
+       <!-- Input for the user's photo URL -->
        <p>
             <label for="photo">Photo URL:</label>
             <br>
-            <input type="url" id="photo" name="photo" placeholder="Enter photo URL" required>
+            <input type="url" id="photo" name="photo" placeholder="Enter photo URL">
+            <span class="error-message" id="photo-error"></span>
        </p>
 
+       <!-- Submission button -->
        <p>
             <button type="submit">Submit</button>
        </p>
     </form>
 
+    <!-- Profile cards container -->
+    <div id="cards-container"></div>
+
+    <!-- Summary of all registered students -->
+    <section id="summary-section">
+        <h2>Submission Summary</h2>
+        <table id="summary-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Program</th>
+                    <th>Year</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- New rows will be added after a form submission -->
+            </tbody>
+        </table>
+    </section>
 </body>
 </html>

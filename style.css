@@ -1,3 +1,4 @@
+/* Page styling */
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
@@ -5,13 +6,15 @@ body {
     background-color: #f4f4f4;
 }
 
-h1 {
+/* Main heading styling */
+#main-heading {
     text-align: center;
-    color: #333;
+    color: #000000;
 }
 
+/* Form container styling */
 form {
-    max-width: 612px;
+    max-width: 700px;
     margin: 20px auto;
     padding: 20px;
     background: #fff;
@@ -19,14 +22,17 @@ form {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-p {
+/* Spacing for paragraphs inside the form */
+form p {
     margin-bottom: 20px;
 }
 
+/* Separated line for the labels */
 label {
     display: block;
 }
 
+/* inputs, selectors, and text areas styling */
 input,
 select,
 textarea {
@@ -37,6 +43,7 @@ textarea {
     box-sizing: border-box;
 }
 
+/* Submit button styling */
 button {
     background-color: #5cb85c;
     color: white;
@@ -46,13 +53,87 @@ button {
     cursor: pointer;
 }
 
+/* Change the button color on hover */
 button:hover {
     background-color: #4cae4c;
 }
 
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 0.35cm;
+}
+
+/* This is the container for all the profile cards */
+#cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Profile card styling */
+.profile-card {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Profile picture styling */
+.profile-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Center the summary section text */
+#summary-section {
+    text-align: center;
+}
+
+/* Summary table styling */
+#summary-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+/* In-table styling */
+#summary-table th, #summary-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Table header styling */
+#summary-table th {
+    background-color: #f2f2f2;
+}
+
+/* Remove button styling */
+.remove-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*Remove button on hover styling*/
+.remove-btn:hover {
+    background-color: #c9302c;
+}
+
+/* Responsive design for smaller screens */
 @media (max-width: 760px) {
     form {
         width: 90%;
-        padding: 15px;
     }
 }
