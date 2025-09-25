@@ -4,12 +4,16 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    background-image: url(bg_img/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(90, 90, 90);
 }
 
 /* Main heading styling */
 #main-heading {
     text-align: center;
-    color: #000000;
+    color: rgba(90, 90, 90, 0.750);
 }
 
 /* Form container styling */
@@ -17,8 +21,8 @@ form {
     max-width: 700px;
     margin: 20px auto;
     padding: 20px;
-    background: #fff;
-    border-radius: 5px;
+    background-color: #ffffffaf;
+    border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -39,13 +43,16 @@ textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
     box-sizing: border-box;
+    background-color: #ffffff60;
+    color: rgba(90, 90, 90);
+    border-color: rgba(118, 117, 132, 0.875);
 }
 
 /* Submit button styling */
 button {
-    background-color: #5cb85c;
+    background-color: rgba(118, 117, 132, 0.875);
     color: white;
     border: none;
     padding: 10px 15px;
@@ -55,7 +62,7 @@ button {
 
 /* Change the button color on hover */
 button:hover {
-    background-color: #4cae4c;
+    background-color: rgba(118, 117, 132);
 }
 
 /* Error message styling */
@@ -75,12 +82,12 @@ button:hover {
 
 /* Profile card styling */
 .profile-card {
-    background: #fff;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     padding: 20px;
     width: 300px;
     text-align: center;
+    background-color: #ffffffaf;
 }
 
 /* Profile picture styling */
@@ -95,6 +102,7 @@ button:hover {
 /* Center the summary section text */
 #summary-section {
     text-align: center;
+    color: rgb(90, 90, 90, 0.750);
 }
 
 /* Summary table styling */
@@ -113,12 +121,17 @@ button:hover {
 
 /* Table header styling */
 #summary-table th {
-    background-color: #f2f2f2;
+    background-color: #ffffffaf;
+}
+
+/* Table row styling */
+#summary-table tr {
+  background-color: #ffffff80;
 }
 
 /* Remove button styling */
 .remove-btn {
-    background-color: #d9534f;
+    background-color: #d9544f;
     color: white;
     border: none;
     padding: 5px 10px;
