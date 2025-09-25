@@ -13,7 +13,7 @@ body {
 /* Main heading styling */
 #main-heading {
     text-align: center;
-    color: rgba(90, 90, 90, 0.750);
+    color: rgba(90, 90, 90, 0.850);
 }
 
 /* Form container styling */
@@ -102,7 +102,7 @@ button:hover {
 /* Center the summary section text */
 #summary-section {
     text-align: center;
-    color: rgb(90, 90, 90, 0.750);
+    color: rgba(90, 90, 90, 0.850);
 }
 
 /* Summary table styling */
