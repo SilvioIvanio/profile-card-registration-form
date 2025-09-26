@@ -8,4 +8,4 @@ A modern web application for creating and managing student profile cards.
 
 This project is a registration form that allows users to submit their information to create a profile card. It was built using HTML, CSS, and JavaScript.
 
-**Live:** https://silvioivanio.github.io/profileCard/
+**Live:** https://silvioivanio.github.io/profile-card-registration-form/
