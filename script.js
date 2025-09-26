@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const emailError = document.getElementById('email-error');
     const programError = document.getElementById('program-error');
     const yearError = document.getElementById('year-error');
-    const photoError = document.getElementById('photo-error');
 
     // Function - checks if the name field is empty
     function validateName() {
@@ -21,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             nameError.textContent = 'Full name is required.';
             return false;
         } else {
+            nameError.textContent = '';
             return true;
         }
     }
@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
             emailError.textContent = 'Please enter a valid email address.';
             return false;
         } else {
+            emailError.textContent = '';
             return true;
         }
     }
@@ -41,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
             programError.textContent = 'Please select a program.';
             return false;
         } else {
+            programError.textContent = '';
             return true;
         }
     }
@@ -51,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
             yearError.textContent = 'Please select a year.';
             return false;
         } else {
+            yearError.textContent = '';
             return true;
         }
     }
