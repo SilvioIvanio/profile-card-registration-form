@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Default photo in case none is provided
         if (photo.trim() === '') {
-            photo = 'https://via.placeholder.com/100';
+            photo = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4MJsV58xh-vFYz3u4WMpS65vCvnGwBYc54SfmKToORTHdZALkZNGvpBlt4dc45A0M-y0&usqp=CAU';
         }
 
         // Card and table row IDs for removing or editing
