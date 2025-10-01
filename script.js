@@ -18,10 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
     function validateName() {
         if (nameInput.value.trim() === '') {
             nameError.textContent = 'Full name is required.';
-            return false;
+           
         } else {
             nameError.textContent = '';
-            return true;
         }
     }
 
@@ -30,20 +29,16 @@ document.addEventListener('DOMContentLoaded', function() {
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailPattern.test(emailInput.value)) {
             emailError.textContent = 'Please enter a valid email address.';
-            return false;
         } else {
             emailError.textContent = '';
-            return true;
         }
     }
     // Function - checks if a program has been selected
     function validateProgram() {
         if (programInput.value === '') {
             programError.textContent = 'Please select a program.';
-            return false;
         } else {
             programError.textContent = '';
-            return true;
         }
     }
 
@@ -51,10 +46,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function validateYear() {
         if (yearInput.value === '') {
             yearError.textContent = 'Please select a year.';
-            return false;
         } else {
             yearError.textContent = '';
-            return true;
         }
     }
 
